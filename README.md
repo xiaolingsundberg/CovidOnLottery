@@ -4,7 +4,14 @@ Analysis of the relationship between the COVID period and lottery revenues using
 
 ## Project Overview
 
-This project builds and compares three candidate regression models to study how lottery revenues changed between the pre-COVID and COVID periods. The analysis focuses on:
+This project builds and compares regression models to study how lottery revenues changed between the pre-COVID and COVID periods.
+
+The current analyses focus on:
+
+- Florida PowerBall revenues
+- Florida MegaMillions revenues
+
+The analysis examines:
 
 - changes in predicted mean revenue across periods
 - changes in the marginal effect of lagged jackpot amount
@@ -16,6 +23,7 @@ The final model is selected using standard model comparison metrics and then int
 
 ```text
 .
-├── covid_on_lottery.ipynb      # main Python analysis notebook
-├── powerball_revenues.do       # earlier Stata analysis file
-└── README.md
+├── .gitignore
+├── README.md
+├── powerball_revenues_florida.ipynb
+└── megamillion_revenues_florida.ipynb
