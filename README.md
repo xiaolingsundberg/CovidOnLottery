@@ -26,4 +26,4 @@ The final model is selected using standard model comparison metrics and then int
 ├── .gitignore
 ├── README.md
 ├── powerball_revenues_florida.ipynb
-└── megamillion_revenues_florida.ipynb
+└── megamillions_revenues_florida.ipynb
