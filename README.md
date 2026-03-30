@@ -2,6 +2,8 @@
 
 Analysis of the relationship between the COVID period and lottery revenues using OLS regression, model comparison, and post-estimation inference in Python.
 
+Analysis of the relationship between the COVID period and lottery ticket sales in Florida, Texas, and Colorado is currently in progress (March30,2026)
+
 ## Project Overview
 
 This project builds and compares regression models to study how lottery revenues changed between the pre-COVID and COVID periods.
