@@ -1,31 +1,80 @@
 # COVID on Lottery
 
-Analysis of the relationship between the COVID period and lottery revenues using OLS regression, model comparison, and post-estimation inference in Python.
+This repository studies the impact of the COVID period on U.S. lottery outcomes using Python. The analysis focuses on **PowerBall** and **MegaMillions**, with separate notebooks for **revenues** and **estimated ticket sales**.
 
-*Analysis of the relationship between the COVID period and lottery ticket sales in Florida, Texas, and Colorado is currently in progress (March30,2026)
+## Project Goal
 
-## Project Overview
+The main goal is to compare lottery performance **before COVID** and **during COVID**, and to examine how ticket sales or revenues respond to factors such as:
 
-This project builds and compares regression models to study how lottery revenues changed between the pre-COVID and COVID periods.
+- COVID period
+- lagged jackpot amount
+- unemployment rate
+- draw day effects
 
-The current analyses focus on:
+## Study Period
 
-- Florida PowerBall revenues
-- Florida MegaMillions revenues
+The analysis uses the following period split:
 
-The analysis examines:
-
-- changes in predicted mean revenue across periods
-- changes in the marginal effect of lagged jackpot amount
-- changes in the marginal effect of unemployment rate
-
-The final model is selected using standard model comparison metrics and then interpreted through post-estimation inference.
+- **Pre-COVID:** May 2016 to March 3, 2020  
+- **COVID period:** March 4, 2020 to March 2022
 
 ## Repository Structure
 
-```text
-.
-├── .gitignore
-├── README.md
-├── powerball_revenues_florida.ipynb
-└── megamillions_revenues_florida.ipynb
+### Program
+Contains the Jupyter notebooks used for data preparation, exploration, modeling, model comparison, and post-model inference.
+
+- `powerball_revenue_florida.ipynb`
+- `powerball_tickets_florida.ipynb`
+- `powerball_tickets_texas.ipynb`
+- `powerball_tickets_colorado.ipynb`
+- `megamillions_revenue_florida.ipynb`
+- `megamillions_tickets_florida.ipynb`
+- `megamillions_tickets_texas.ipynb`
+- `megamillions_tickets_colorado.ipynb`
+
+### Data
+Contains the source data files used in the notebooks.
+
+## Methods
+
+The workflow in each notebook generally includes:
+
+1. Data loading and preparation  
+2. Period creation (pre-COVID vs COVID)  
+3. Exploratory data analysis  
+   - summary statistics
+   - histograms
+   - scatter plots
+   - boxplots
+   - time-series plots
+4. Outlier and skewness assessment  
+5. Log transformation when appropriate  
+6. Model estimation using OLS regression  
+7. Model comparison using:
+   - Adjusted R-squared
+   - AIC
+   - BIC
+8. Post-model inference
+
+## Ticket Sales
+
+Ticket sales are estimated from prize winner counts and prize-winning probabilities, following the original project setup.
+
+## Tools Used
+
+- Python
+- pandas
+- numpy
+- matplotlib
+- statsmodels
+- Jupyter Notebook
+
+## Notes
+
+- Revenue and ticket-sales analyses are organized in separate notebooks.
+- Some final models are estimated on the **log scale** due to skewness and extreme values.
+- Conclusions are reported separately for each game and state.
+
+## Author
+
+Xiaoling Sundberg
